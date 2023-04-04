@@ -63,7 +63,7 @@ const moviesSchema = new Schema<movieType>({
 });
 
 export default function Card(): JSX.Element {
-  const [movies, setMovies] = useState();
+  // const [movies, setMovies] = useState();s
   useEffect(() => {
     fetch("http://localhost:8080/movie")
       .then((response) => response.json())
