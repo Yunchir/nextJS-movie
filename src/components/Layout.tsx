@@ -9,7 +9,7 @@ export default function Layout({ children }: PropType) {
   return (
     <div>
       <Head>
-        <title>haha</title>
+        <title>RottenTomatoes.com</title>
       </Head>
 
       <main>{children}</main>

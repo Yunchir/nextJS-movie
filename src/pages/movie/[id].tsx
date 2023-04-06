@@ -13,20 +13,23 @@ export default function Movie() {
         .then((res) => setMovie(res));
     }
   }, [query.id]);
-  console.log(movie);
 
   return (
     <div>
       {/* ID: {query.id} */}
-
       {movie && (
-        <>
-          {movie.title}
-          {movie.year}
-          <picture>
-            <img src={movie.poster} alt="img" />
+        <div className="flex place-content-center">
+          <picture className="h-64 w-1/2">
+            <img className="m-5 " src={movie[0].poster} alt="img" />
           </picture>
-        </>
+          <div className=" mt-5">
+            <div className="title">Title: {movie[0].title}</div>
+            <div className="year">Year: {movie[0].year}</div>
+            <div className="country">Coutry: {movie[0].countries}</div>
+            <div className="fullplot">Plot: {movie[0].fullplot}</div>
+          </div>
+          <button>More...</button>
+        </div>
       )}
     </div>
   );
