@@ -32,14 +32,3 @@ export default function Movie(): JSX.Element {
     </Layout>
   );
 }
-
-// export async function getStaticProps() {
-//   const res = await fetch("http://localhost:6161/movies") {
-//     const movies = await res.json()
-//     return {
-//       props: {
-//         movies : movies,
-//       }
-//     }
-//   }
-// }

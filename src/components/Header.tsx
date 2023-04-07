@@ -4,7 +4,7 @@ export default function Header(): JSX.Element {
   return (
     <div>
       <div className="bg-red-600">
-        <nav className="bg-white border-gray-200 bg-red-600 container mx-auto">
+        <nav className="border-gray-200 bg-red-600 container mx-auto">
           <div className="flex flex-wrap justify-between items-center p-4">
             <Link href={"/"}>
               <picture>
